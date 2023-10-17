@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+div.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+div.menu ul {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: cente;
+}
+
+div.menu ul li {
+    list-style: none;
+    padding: 15px 20px 12px 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+div.menu ul li:first-child {
+    background-color: #334E9E;
+}
+
+div.menu ul li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #000;
+    line-height: 21px;
+}
+
+div.menu ul li:first-child a {
+    color: #fff;
+}
+
+div.dropbox {
+    width: 100%;
+    background-color: #334E9E;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
+
+div.dropbox div {
+    width: 14%;
+    border: 1px solid grey;
+    border-radius: 30px;
+    background-color: white;
+}
+
+div.dropbox div select {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: .9rem;
+    line-height: 1.1rem;
+    padding: 0 15px 0 20px;
+    border-radius: 20px;
+    height: 40px;
+    min-width: 170px;
+}
+
+div.dropbox div select option {
+    font-size: .9rem;
+    border: .5px solid grey;
+}
+
+div.dropbox div:nth-child(3) {
+    padding: 10px 15px 11px 15px;
+    border-radius: 30px;
+    background-color: #fff;
+    vertical-align: middle;
+    text-align: center;
+}
+
+div.dropbox div:nth-child(3) a {
+    width: 100%;
+    font-weight: 600;
+    letter-spacing: .2px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .8);
+}
+
+div.container {
+    width: 87%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 3px;
+    padding-bottom: 200px;
+}
+
+div.container>div {
+    width: 23%;
+    height: 60vh;
+    transition: .5s ease-in-out;
+}
+
+div.container>div:hover {
+    cursor: pointer;
+    transform: scale(1.09);
+}
+
+div.container>div div.ufc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+div.container>div.ufc .ufc-title {
+    color: #000000;
+    letter-spacing: .3px;
+    padding: 15px 0;
+    background-color: #F3F3F3;
+    transition: .5s ease-in-out;
+    text-align: center;
+}
+
+div.container>div.ufc .ufc-title:hover {
+    background-color: #334E9E;
+}
+
+div.container>div.ufc .ufc-title h2 {
+    font-size: 1.1rem;
+    padding-left: 5px;
+}
+
+div.container>div div.ufc-img {
+    width: 100%;
+    height: 60vh;
+    background-image: url("../images/ufcsite-1.350x0.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+div.container>div div.ufc-lang {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container>div div.ufc-seance {
+    background-color: #f9f9f9;
+    padding: 18px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+div.container>div div.ufc-seance button {
+    padding: 12px 20px;
+    border: 1px solid #334E9E;
+    color: #ffffff;
+    border-radius: 50px;
+    background-color: #334E9E;
+    font-size: .9rem;
+    transition: .8s ease-in-out;
+}
+
+div.container>div div.ufc-seance button:hover {
+    cursor: pointer;
+    background-color: #00ACEC;
+    border-color: #00ACEC;
+}
+
+div.container>div div.ufc-seance span {
+    width: 39px;
+    height: 39px;
+    padding-top: 10px;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    color: #ffffff;
+}
+
+div.container>div div.football {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+div.container>div.football .football-title {
+    color: #000000;
+    letter-spacing: .3px;
+    padding: 15px 0;
+    background-color: #F3F3F3;
+    transition: .5s ease-in-out;
+    text-align: center;
+}
+
+div.container>div.football .football-title:hover {
+    background-color: #334E9E;
+}
+
+div.container>div.football .football-title h2 {
+    font-size: 1.1rem;
+    padding-left: 5px;
+}
+
+div.container>div div.football-img {
+    width: 100%;
+    height: 60vh;
+    background-image: url("../images/footballsite-21-okt.350x0.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+div.container>div div.football-lang {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container>div div.football-seance {
+    background-color: #f9f9f9;
+    padding: 18px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+div.container>div div.football-seance button {
+    padding: 12px 20px;
+    border: 1px solid #334E9E;
+    color: #ffffff;
+    border-radius: 50px;
+    background-color: #334E9E;
+    font-size: .9rem;
+    transition: .8s ease-in-out;
+}
+
+div.container>div div.football-seance button:hover {
+    cursor: pointer;
+    background-color: #00ACEC;
+    border-color: #00ACEC;
+}
+
+div.container>div div.football-seance span {
+    width: 39px;
+    height: 39px;
+    padding-top: 10px;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    color: #ffffff;
+}
+
+div.container>div div.film {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+div.container>div.film .film-title {
+    color: #000000;
+    letter-spacing: .3px;
+    padding: 15px 0;
+    background-color: #F3F3F3;
+    transition: .5s ease-in-out;
+    text-align: center;
+}
+
+div.container>div.film .film-title:hover {
+    background-color: #334E9E;
+}
+
+div.container>div.film .film-title h2 {
+    font-size: 1.1rem;
+    padding-left: 5px;
+}
+
+div.container>div div.film-img {
+    width: 100%;
+    height: 60vh;
+    background-image: url("../images/orig.350x0.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+div.container>div div.film-lang {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container>div div.film-seance {
+    background-color: #f9f9f9;
+    padding: 18px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+div.container>div div.film-seance button {
+    padding: 12px 20px;
+    border: 1px solid #334E9E;
+    color: #ffffff;
+    border-radius: 50px;
+    background-color: #334E9E;
+    font-size: .9rem;
+    transition: .8s ease-in-out;
+}
+
+div.container>div div.film-seance button:hover {
+    cursor: pointer;
+    background-color: #00ACEC;
+    border-color: #00ACEC;
+}
+
+div.container>div div.film-seance span {
+    width: 39px;
+    height: 39px;
+    padding-top: 10px;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    color: #ffffff;
+}
+
+div.container>div div.anima {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+div.container>div.anima .anima-title {
+    color: #000000;
+    letter-spacing: .3px;
+    padding: 15px 0;
+    background-color: #F3F3F3;
+    transition: .5s ease-in-out;
+    text-align: center;
+}
+
+div.container>div.anima .anima-title:hover {
+    background-color: #334E9E;
+}
+
+div.container>div.anima .anima-title h2 {
+    font-size: 1.1rem;
+    padding-left: 5px;
+}
+
+div.container>div div.anima-img {
+    width: 100%;
+    height: 60vh;
+    background-image: url("../images/site.350x0.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+div.container>div div.anima-lang {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container>div div.anima-seance {
+    background-color: #f9f9f9;
+    padding: 18px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+div.container>div div.anima-seance button {
+    padding: 12px 20px;
+    border: 1px solid #334E9E;
+    color: #ffffff;
+    border-radius: 50px;
+    background-color: #334E9E;
+    font-size: .9rem;
+    transition: .8s ease-in-out;
+}
+
+div.container>div div.anima-seance button:hover {
+    cursor: pointer;
+    background-color: #00ACEC;
+    border-color: #00ACEC;
+}
+
+div.container>div div.anima-seance span {
+    width: 39px;
+    height: 39px;
+    padding-top: 10px;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    color: #ffffff;
+}
